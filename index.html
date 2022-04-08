@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap"
+  rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+  <script type="text/javascript" src="./index.js" defer></script>
+  <title>Jacob White's Porfolio</title>
+</head>
+<body>
+  <nav class="mobile-navbar flex-center">
+    <button class="navbar-btn-close">
+      <svg class="navbar-close-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+        fill="none">
+        <path
+          d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+        </path>
+      </svg>
+    </button>
+    <p class="navbar-title">NAVIGATION</p>
+    <div class="nav-links">
+      <a href="#hello" class="a-hello nav-selected">HELLO</a>
+      <a href="#about" class="a-about">ABOUT</a>
+      <a href="#portfolio" class="a-portfolio">PORTFOLIO</a>
+      <a href="#contact" class="a-contact">CONTACT</a>
+    </div>
+  </nav>
+  <header>
+    <button class="dark-light-btn" tabindex="0">
+      <svg class="dark-mode-svg dark-light-selected" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M20.742 13.045a8.088 8.088 0 0 1-2.077.271c-2.135 0-4.14-.83-5.646-2.336a8.025 8.025 0 0 1-2.064-7.723A1 1 0 0 0 9.73 2.034a10.014 10.014 0 0 0-4.489 2.582c-3.898 3.898-3.898 10.243 0 14.143a9.937 9.937 0 0 0 7.072 2.93 9.93 9.93 0 0 0 7.07-2.929 10.007 10.007 0 0 0 2.583-4.491 1.001 1.001 0 0 0-1.224-1.224zm-2.772 4.301a7.947 7.947 0 0 1-5.656 2.343 7.953 7.953 0 0 1-5.658-2.344c-3.118-3.119-3.118-8.195 0-11.314a7.923 7.923 0 0 1 2.06-1.483 10.027 10.027 0 0 0 2.89 7.848 9.972 9.972 0 0 0 7.848 2.891 8.036 8.036 0 0 1-1.484 2.059z">
+        </path>
+      </svg>
+      <svg class="light-mode-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M6.993 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007S14.761 6.993 12 6.993 6.993 9.239 6.993 12zM12 8.993c1.658 0 3.007 1.349 3.007 3.007S13.658 15.007 12 15.007 8.993 13.658 8.993 12 10.342 8.993 12 8.993zM10.998 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2h-3zm17 0h3v2h-3zM4.219 18.363l2.12-2.122 1.415 1.414-2.12 2.122zM16.24 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.342 7.759 4.22 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z">
+        </path>
+      </svg>
+    </button>
+    <a class="link-linkedin" href="https://www.linkedin.com/in/jacob-white-013804236/" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+        <path
+          d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
+        </path>
+      </svg>
+    </a>
+    <a class="link-github" href="https://github.com/Pillarofcats" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z">
+        </path>
+      </svg>
+    </a>
+    <button class="navbar-btn-open">
+      <svg class="navbar-menu-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+      </svg>
+    </button>
+    <nav class="desktop-navbar">
+      <div class="desktop-navbar-links">
+        <a href="#hello" class="a-hello nav-selected" tabindex="0" >HELLO</a>
+        <a href="#about" class="a-about" tabindex="0" >ABOUT</a>
+        <a href="#portfolio" class="a-portfolio" tabindex="0" >PORTFOLIO</a>
+        <a href="#contact" class="a-contact" tabindex="0" >CONTACT</a>
+      </div>
+    </nav>
+  </header>
+  <section id="hello" class="flex-center">
+    <P class="hello">HELLO</P>
+    <div class="hello-container">
+      <P class="hello-iam">I am</P>
+      <div class="hello-name">
+        <div class="hello-name-jacob">Jacob</div>
+        <div class="hello-name-white">White</div>
+      </div>
+      <p class="hello-whoami">A developer who loves to learn and code</p>
+    </div>
+    <a class="resume-btn btn-design" download href="./Resume.txt">
+      <svg class="dl-resume-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+        fill="inherit">
+        <path d="M19 9h-4V3H9v6H5l7 8zM4 19h16v2H4z"></path>
+      </svg>
+      <p>Resume</p>
+    </a>
+  </section>
+  <section id="about">
+    <div class="about-me-container">
+      <p class="about-me-header title-headers">ABOUT</p>
+      <p class="about-me-text">I'm a developer with a background in engineering who has been learning web development since 2019. My insatiable curiosity pushes me to continuously improve my skills and understanding. Currently I am pursuing industry experience as a frontend developer, but eventually I would like transfer to a backend or software developer. With my current experience I am confident that I will be a valuable addition to any development team. Thank you for your time.</p>
+    </div>  
+    <div class="skill-container">
+      <div class="skills">
+        <div class="skill html5">
+          <h2 class="skill-title">HTML5</h2>
+          <div>
+            <img src="./images/skill-html5.svg" alt="HTML5 logo image">
+          </div>
+        </div>
+        <div class="skill javascript">
+          <h2 class="skill-title">JAVASCRIPT</h2>
+          <div>
+            <img src="./images/skill-js.svg" alt="Javascript logo image">
+          </div>
+        </div>
+        <div class="skill dsa">
+          <h2 class="skill-title">DSA</h2>
+          <div>
+            <img src="./images/skill-dsa.png" alt="Data Structures & Algorithms logo image">
+          </div>
+        </div>
+        <div class="skill psql">
+          <h2 class="skill-title">PSQL</h2>
+          <div>
+            <img src="./images/skill-psql.svg" alt="PostgreSQL logo image">
+          </div>
+        </div>
+        <div class="skill css3">
+          <h2 class="skill-title">CSS3</h2>
+          <div>
+            <img src="./images/skill-css3.svg" alt="CSS3 logo image">
+          </div>
+        </div>
+        <div class="skill react">
+          <h2 class="skill-title">REACT</h2>
+          <div>
+            <img src="./images/skill-react.svg" alt="React logo image">
+          </div>
+        </div>
+        <div class="skill node">
+          <h2 class="skill-title">NODE</h2>
+          <div>
+            <img src="./images/skill-node.svg" alt="Node logo image">
+          </div>
+        </div>
+        <div class="skill typescript">
+          <h2 class="skill-title">TYPESCRIPT</h2>
+          <div>
+            <img src="./images/skill-typescript.svg" alt="Typescript logo image">
+          </div>
+        </div>
+        <div class="skill d3">
+          <h2 class="skill-title">D3</h2>
+          <div>
+            <img src="./images/skill-d3.svg" alt="D3 logo image">
+          </div>
+        </div>
+        <div class="skill jest">
+          <h2 class="skill-title">JEST</h2>
+          <div>
+            <img src="./images/skill-jest.svg" alt="Jest logo image">
+          </div>
+        </div>
+        <div class="skill npm">
+          <h2 class="skill-title">NPM</h2>
+          <div>
+            <img src="./images/skill-npm.svg" alt="NPM logo image">
+          </div>
+        </div>
+        <div class="skill git">
+          <h2 class="skill-title">GIT</h2>
+          <div>
+            <img src="./images/skill-git.svg" alt="Git logo image">
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <section id="portfolio" class="flex-center">
+    <p class="portfolio-header">PORTFOLIO</p>
+    <div class="portfolio-grid">
+      <div class="proj-1 project">
+        <p class="project-title">A* Pathfinder</p>
+        <div class="project-text">
+          <p>Draw a maze or generate a random one. Select the A* pathfinding algorithm. Drag and drop the start and end nodes. Start the path algorithm and enjoy the pathfinding visualization. Reset the path or grid walls. Mobile friendly and uses device resolution to generate a dynamic grid.</p>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Pillarofcats/pathfinding_algorithms" target="_blank" class="btn-design">Github Repo</a>
+          <a class="btn-design" href="https://js-pathfinding-algorithms.herokuapp.com/" target="_blank">Demo</a>
+        </div>
+      </div>
+      <div class="proj-2 project">
+        <p class="project-title">Restaurant Reviewer</p>
+        <div class="project-text">
+          <p>Search resturants by name, zipcode, or quisine. Locate the selected resturant using Google maps API. Leave a positive or negative review for selected restaurant. Uses MongoDB as database and psuedo login/register. Backend uses CRUD operations to create, read, update, and destroy reviews.</p>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Pillarofcats/mern_fullstack_restaurant_reviews" target="_blank" class="btn-design">Github Repo</a>
+          <a class="btn-design" href="https://mern-restaurant-reviews.herokuapp.com/" target="_blank">Demo</a>
+        </div>
+      </div>
+      <div class="proj-3 project">
+        <p class="project-title">Goal Setter</p>
+        <div class="project-text">
+          <p>Register and login to your account to start setting goals. Login system uses JSON web tokens for user validation. User will remain logged in after leaving the site. Uses mongoDB as a database to store user goals. Backend uses CRUD operations to create, read, update, and destroy the user's goals.</p>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Pillarofcats/mern_fullstack_goals" target="_blank" class="btn-design">Github Repo</a>
+          <a class="btn-design" href="https://mern-set-some-goals.herokuapp.com/" target="_blank">Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="flex-center">
+    <p class="contact-header">CONTACT</p>
+    <form id="contact-form-post" name="contact-form" class="flex-center">
+      <div id="form-name">
+        <label for="name">NAME</label>
+        <input id="name" name="name">
+        <svg id="name-icon-err" class="error form-icon-position" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M11.953 2C6.465 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.493 2 11.953 2zM12 20c-4.411 0-8-3.589-8-8s3.567-8 7.953-8C16.391 4 20 7.589 20 12s-3.589 8-8 8z" />
+          <path d="M11 7h2v7h-2zm0 8h2v2h-2z" />
+        </svg>
+        <svg id="name-icon-ok" class="success form-icon-position" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z" />
+          <path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z" />
+        </svg>
+        <small class="name-error">Name is required</small>
+      </div>
+      <div id="form-email">
+        <label for="email">EMAIL</label>
+        <input id="email" name="email">
+        <svg id="email-icon-err" class="error form-icon-position" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+          viewBox="0 0 24 24" fill="none">
+          <path
+            d="M11.953 2C6.465 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.493 2 11.953 2zM12 20c-4.411 0-8-3.589-8-8s3.567-8 7.953-8C16.391 4 20 7.589 20 12s-3.589 8-8 8z" />
+          <path d="M11 7h2v7h-2zm0 8h2v2h-2z" />
+        </svg>
+        <svg id="email-icon-ok" class="success form-icon-position" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+          viewBox="0 0 24 24" fill="none">
+          <path
+            d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z" />
+          <path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z" />
+        </svg>
+        <small class="email-error">Email is required</small>
+      </div>
+      <div id="form-comment">
+        <label for="comment">COMMENT</label>
+        <textarea id="comment" name="comment" rows="4"></textarea>
+        <svg id="comment-icon-err" class="error form-icon-position" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+          viewBox="0 0 24 24" fill="none">
+          <path
+            d="M11.953 2C6.465 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.493 2 11.953 2zM12 20c-4.411 0-8-3.589-8-8s3.567-8 7.953-8C16.391 4 20 7.589 20 12s-3.589 8-8 8z" />
+          <path d="M11 7h2v7h-2zm0 8h2v2h-2z" />
+        </svg>
+        <svg id="comment-icon-ok" class="success form-icon-position" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+          viewBox="0 0 24 24" fill="none">
+          <path
+            d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z" />
+          <path d="M9.999 13.587 7.7 11.292l-1.412 1.416 3.713 3.705 6.706-6.706-1.414-1.414z" />
+        </svg>
+        <small class="comment-error">Comment is required</small>
+      </div>
+      <button id="form-submit-btn" class="btn-design" type="submit">Send</button>
+      <div class="submit-response-container">
+        <small class="submit-response">null</small>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
