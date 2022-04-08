@@ -527,8 +527,8 @@ a.resume-btn {
   grid-template-columns: repeat(auto-fit, 1fr);
   padding-left: 2rem;
   padding-right: 2rem;
-  gap: 2rem;
-  margin: 2rem 0;
+  gap: 3rem;
+  margin: 3rem 0;
 }
 
 .project {
@@ -536,17 +536,17 @@ a.resume-btn {
   height: 100%;
   color: var(--dark-text);
   background-color: var(--dark-header);
-  border-left: 1rem solid var(--dark-accent);
+  box-shadow: -1rem 0 0 0 var(--dark-accent);
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
-  overflow: hidden;
-  transition: border .2s;
+  
   }
 
 .project:hover {
-  border: 1rem solid var(--dark-accent);
+  box-shadow: none;
+  outline: 1rem solid var(--dark-accent);
 }
 
 .project-text {
