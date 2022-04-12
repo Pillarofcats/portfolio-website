@@ -10,13 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap"
   rel="stylesheet">
-  <script type="text/javascript" src="./index.js" async></script>
+  <script type="text/javascript" src="./index.js" defer></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
   <title>Jacob White's Porfolio</title>
 </head>
 <body>
   <nav class="mobile-navbar flex-center">
-    <button class="navbar-btn-close">
+    <button class="navbar-btn-close" aria-label="close mobile navbar">
       <svg class="navbar-close-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
         fill="none">
         <path
@@ -33,7 +33,7 @@
     </div>
   </nav>
   <header>
-    <button class="dark-light-btn" tabindex="0">
+    <button class="dark-light-btn" tabindex="0" aria-label="alternate between dark and light mode button">
       <svg class="dark-mode-svg dark-light-selected" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
         <path
           d="M20.742 13.045a8.088 8.088 0 0 1-2.077.271c-2.135 0-4.14-.83-5.646-2.336a8.025 8.025 0 0 1-2.064-7.723A1 1 0 0 0 9.73 2.034a10.014 10.014 0 0 0-4.489 2.582c-3.898 3.898-3.898 10.243 0 14.143a9.937 9.937 0 0 0 7.072 2.93 9.93 9.93 0 0 0 7.07-2.929 10.007 10.007 0 0 0 2.583-4.491 1.001 1.001 0 0 0-1.224-1.224zm-2.772 4.301a7.947 7.947 0 0 1-5.656 2.343 7.953 7.953 0 0 1-5.658-2.344c-3.118-3.119-3.118-8.195 0-11.314a7.923 7.923 0 0 1 2.06-1.483 10.027 10.027 0 0 0 2.89 7.848 9.972 9.972 0 0 0 7.848 2.891 8.036 8.036 0 0 1-1.484 2.059z">
@@ -59,7 +59,7 @@
         </path>
       </svg>
     </a>
-    <button class="navbar-btn-open">
+    <button class="navbar-btn-open" aria-label="open mobile navbar button">
       <svg class="navbar-menu-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
         <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
       </svg>
@@ -83,7 +83,7 @@
       </div>
       <p class="hello-whoami">A developer who loves to learn and code</p>
     </div>
-    <a class="resume-btn btn-design" download href="./Resume.txt">
+    <a class="resume-btn btn-design" download href="./Jacob%20White%20Resume.pdf" aria-label="download resume link">
       <svg class="dl-resume-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
         fill="inherit">
         <path d="M19 9h-4V3H9v6H5l7 8zM4 19h16v2H4z"></path>
@@ -182,8 +182,8 @@
           <p>Draw a maze or generate a random one. Select the A* pathfinding algorithm. Drag and drop the start and end nodes. Start the path algorithm and enjoy the pathfinding visualization. Reset the path or grid walls. Mobile friendly and uses device resolution to generate a dynamic grid.</p>
         </div>
         <div class="project-links">
-          <a href="https://github.com/Pillarofcats/pathfinding_algorithms" target="_blank" class="btn-design">Github Repo</a>
-          <a class="btn-design" href="https://js-pathfinding-algorithms.herokuapp.com/" target="_blank">Demo</a>
+          <a href="https://github.com/Pillarofcats/pathfinding_algorithms" target="_blank" class="btn-design" aria-label="A* Pathfinder project github link">Github Repo</a>
+          <a class="btn-design" href="https://js-pathfinding-algorithms.herokuapp.com/" target="_blank" aria-label="A* Pathfinder project demo link">Demo</a>
         </div>
       </div>
       <div class="proj-2 project">
@@ -192,8 +192,8 @@
           <p>Search resturants by name, zipcode, or cuisine. Locate the selected resturant using Google maps API. Leave a positive or negative review for selected restaurant. Uses MongoDB as database and psuedo login/register. Backend uses CRUD operations to create, read, update, and destroy reviews.</p>
         </div>
         <div class="project-links">
-          <a href="https://github.com/Pillarofcats/mern_fullstack_restaurant_reviews" target="_blank" class="btn-design">Github Repo</a>
-          <a class="btn-design" href="https://mern-restaurant-reviews.herokuapp.com/" target="_blank">Demo</a>
+          <a href="https://github.com/Pillarofcats/mern_fullstack_restaurant_reviews" target="_blank" class="btn-design" aria-label="Restaurant Reviewer project github link">Github Repo</a>
+          <a class="btn-design" href="https://mern-restaurant-reviews.herokuapp.com/" target="_blank" aria-label="Restaurant Reviewer project demo link">Demo</a>
         </div>
       </div>
       <div class="proj-3 project">
@@ -202,8 +202,8 @@
           <p>Register and login to your account to start setting goals. Login system uses JSON web tokens for user validation. User will remain logged in after leaving the site. Uses mongoDB as a database to store user goals. Backend uses CRUD operations to create, read, update, and destroy the user's goals.</p>
         </div>
         <div class="project-links">
-          <a href="https://github.com/Pillarofcats/mern_fullstack_goals" target="_blank" class="btn-design">Github Repo</a>
-          <a class="btn-design" href="https://mern-set-some-goals.herokuapp.com/" target="_blank">Demo</a>
+          <a href="https://github.com/Pillarofcats/mern_fullstack_goals" target="_blank" class="btn-design" aria-label="Goal Setter project github link">Github Repo</a>
+          <a class="btn-design" href="https://mern-set-some-goals.herokuapp.com/" target="_blank" aria-label="Goal Setter project demo link">Demo</a>
         </div>
       </div>
     </div>
@@ -260,7 +260,7 @@
         </svg>
         <small class="comment-error">Comment is required</small>
       </div>
-      <button id="form-submit-btn" class="btn-design" type="submit">Send</button>
+      <button id="form-submit-btn" class="btn-design" type="submit" aria-label="Submit contact form button">Send</button>
       <div class="submit-response-container">
         <small class="submit-response">null</small>
       </div>

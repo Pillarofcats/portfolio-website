@@ -191,7 +191,7 @@ const submitForm = (e) => {
   e.preventDefault()
 
   //If submission is true return
-  if(submitState || submitCap > 3) return
+  if(submitState || submitCap > 2) return
 
   //Error flags
   let nameErrFlag = false
@@ -278,7 +278,7 @@ const submitForm = (e) => {
       contactForm.reset()
       //Reset submitState
       submitState = false
-    }, 2000)
+    }, 1000)
   }
 
   //Reset submit response
@@ -290,7 +290,7 @@ const submitForm = (e) => {
       submitResponseContainer.style.visibility = "hidden"
       //If response is successful reset the form
       if(response) reset()
-    }, 2000)
+    }, 1000)
   }
 
   //Initialize connection to emailjs

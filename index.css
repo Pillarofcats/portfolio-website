@@ -668,7 +668,6 @@ select:-webkit-autofill:focus {
   color: var(--dark-error);
   fill: currentColor;
   visibility: hidden;
-  letter-spacing: 1px;
 }
 
 .success {
