@@ -628,11 +628,11 @@ a.resume-btn {
 
 #contact-form-post textarea,
 #contact-form-post input {
+  padding: 1rem;
   background-color: var(--dark-header);
   color: var(--dark-text);
-  text-indent: 1rem;
-  margin: 0.5rem 0;
   border-left: 1rem solid var(--dark-accent);
+  word-wrap: break-word;
 }
 
 /* Change Autocomplete styles*/
