@@ -697,6 +697,13 @@ select:-webkit-autofill:focus {
 
 /*--------------------- Media Queries ---------------------*/
 
+/* Lanscape */
+@media (orientation: landscape) {
+  .navbar-title {
+    display: none;
+  }
+}
+
 /* 576px */
 @media (min-width: 36rem) {
 
