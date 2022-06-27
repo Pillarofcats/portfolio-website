@@ -175,8 +175,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar-title {
-  position: absolute;
-  top: 10rem;
   font-size: var(--font-size-large);
   color: var(--dark-accent);
   border-bottom: 0.1rem solid var(--dark-text);
@@ -196,7 +194,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .nav-links {
-  padding-right: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -697,13 +694,6 @@ select:-webkit-autofill:focus {
 
 /*--------------------- Media Queries ---------------------*/
 
-/* Lanscape */
-@media (orientation: landscape) {
-  .navbar-title {
-    display: none;
-  }
-}
-
 /* 576px */
 @media (min-width: 36rem) {
 
@@ -824,5 +814,12 @@ select:-webkit-autofill:focus {
 
   #contact-form-post {
     width: 40%;
+  }
+}
+
+/* Landscape */
+@media screen and (orientation: landscape) {
+  .navbar-title {
+    display: none;
   }
 }
