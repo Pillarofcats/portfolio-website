@@ -43,7 +43,18 @@
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+/* Reset button/default styling for Safari */
+input[type=text],
+input[type=button],
+button {
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 /* Reapply the pointer cursor for anchor tags */
@@ -476,13 +487,13 @@ a.resume-btn {
   transform: scale(0.9);
 }
 
-.jest img,
-.dsa img {
-  transform: scale(1.1);
+.javascript img {
+  transform: scale(0.85)
 }
 
-.javascript img,
-.typescript img {
+.typescript img,
+.jest img,
+.dsa img {
   transform: scale(1.1);
 }
 
