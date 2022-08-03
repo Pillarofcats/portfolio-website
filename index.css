@@ -52,6 +52,8 @@
 input[type=text],
 input[type=button],
 button {
+  border-style: none;
+  background-color: transparent;
   text-decoration: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -514,7 +516,6 @@ a.resume-btn {
 #portfolio {
   font-size: var(--font-size-medium);
   background-color: var(--dark-header);
-  padding: 2rem 0;
 }
 
 .portfolio-header {
@@ -523,7 +524,7 @@ a.resume-btn {
   font-weight: 600;
   background-color: transparent;
   color: var(--dark-text);
-  width: fit-content;
+  padding-top: 2rem;
   border-bottom: 0.1rem solid var(--dark-accent);
 }
 
@@ -581,9 +582,8 @@ a.resume-btn {
   width: 100%;
   padding-bottom: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 1.5rem;
 }
 
 .project-links a {
@@ -640,6 +640,9 @@ a.resume-btn {
   background-color: var(--dark-header);
   color: var(--dark-text);
   border-left: 1rem solid var(--dark-accent);
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
   word-wrap: break-word;
 }
 
