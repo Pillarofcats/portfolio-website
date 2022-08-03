@@ -516,6 +516,8 @@ a.resume-btn {
 #portfolio {
   font-size: var(--font-size-medium);
   background-color: var(--dark-header);
+  padding: 2rem 0;
+  gap: 2rem;
 }
 
 .portfolio-header {
@@ -524,7 +526,6 @@ a.resume-btn {
   font-weight: 600;
   background-color: transparent;
   color: var(--dark-text);
-  padding-top: 2rem;
   border-bottom: 0.1rem solid var(--dark-accent);
 }
 
@@ -537,7 +538,6 @@ a.resume-btn {
   padding-left: 2rem;
   padding-right: 2rem;
   gap: 3rem;
-  margin: 3rem 0;
 }
 
 .project {
@@ -550,7 +550,6 @@ a.resume-btn {
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
-  
   }
 
 .project:hover {
