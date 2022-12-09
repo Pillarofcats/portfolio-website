@@ -795,12 +795,12 @@ select:-webkit-autofill:focus {
   
   .proj-2 {
     /*Background shorthand: [bg-image] [bg-position] / [bg-size] [bg-repeat] [bg-attachment] [bg-origin] [bg-clip] [bg-color]*/
-    background: url(./images/restaurantReviews.png) center/cover no-repeat;
+    background: url(./images/reactLoginRegisterImage.png) center/cover no-repeat;
   }
   
   .proj-3 {
     /*Background shorthand: [bg-image] [bg-position] / [bg-size] [bg-repeat] [bg-attachment] [bg-origin] [bg-clip] [bg-color]*/
-    background: url(./images/setGoals.png) center/cover no-repeat;
+    background: url(./images/restaurantReviews.png) center/cover no-repeat;
   }
 
   /*----- Section: Contact -----*/
