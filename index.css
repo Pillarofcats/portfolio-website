@@ -194,6 +194,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .mobile-navbar a {
+  cursor: pointer;
   margin: 1rem 0;
   align-self: flex-start;
   line-height: 4rem;
@@ -334,6 +335,7 @@ button.navbar-btn-open {
 }
 
 .desktop-navbar-links a {
+  cursor: pointer;
   padding: 0 1rem;
   margin-right: 2rem;
   border-left: .8rem solid transparent;

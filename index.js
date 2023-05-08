@@ -324,6 +324,14 @@ const submitForm = (e) => {
 
 contactForm.addEventListener("submit", submitForm)
 
+/*--------------------- SCROLL TO LOCAL JUMP LINK ---------------------*/
+
+function jumpTo(link) {
+  document.querySelector(link).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
 /*--------------------- POST FORM DATA TO SERVER ---------------------*/
 
 //Fetch POST form data
