@@ -21,9 +21,12 @@
 :root {
   --font-main: "Poppins", sans-serif;
   --dark-accent: orange;
-  --dark-text: #f0f0f0; /* --light-text: #252525; */
-  --dark-header: #252525; /* --light-header: #f0f0f0; */
-  --dark-grey: #424242; /* --light-grey: #gggggg; */
+  --dark-text: #f0f0f0;
+  /* --light-text: #252525; */
+  --dark-header: #252525;
+  /* --light-header: #f0f0f0; */
+  --dark-grey: #424242;
+  /* --light-grey: #gggggg; */
   --dark-error: #ff0000;
   --dark-success: #00ff00;
   --font-size-large: 3.5rem;
@@ -242,11 +245,9 @@ header {
   min-height: 4.5rem;
   width: 100%;
   background-color: var(--dark-header);
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0) 40%,
-    rgba(0, 0, 0, 0.2) 70%,
-    rgba(0, 0, 0, 0.4) 100%
-  );
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0.2) 70%,
+      rgba(0, 0, 0, 0.4) 100%);
   z-index: 2;
 }
 
@@ -406,7 +407,7 @@ a.resume-btn {
   fill: currentColor;
 }
 
-.resume-btn > p {
+.resume-btn>p {
   margin-left: 1rem;
 }
 
@@ -506,7 +507,7 @@ a.resume-btn {
   font-weight: 600;
 }
 
-.skill-title + div {
+.skill-title+div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -518,7 +519,7 @@ a.resume-btn {
 #portfolio {
   font-size: var(--font-size-medium);
   background-color: var(--dark-header);
-  padding: 2rem 0;
+  padding: 2rem 0rem;
   gap: 2rem;
 }
 
@@ -552,7 +553,7 @@ a.resume-btn {
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
-  }
+}
 
 .project:hover {
   box-shadow: none;
@@ -598,7 +599,7 @@ a.resume-btn {
   background: none;
 }
 
-.project > p:first-child {
+.project>p:first-child {
   text-align: center;
   font-weight: 600;
 }
@@ -631,7 +632,7 @@ a.resume-btn {
   color: var(--dark-text);
 }
 
-#contact-form-post > *:not([type="submit"]) {
+#contact-form-post>*:not([type="submit"]) {
   min-width: 100%;
 }
 
@@ -763,13 +764,13 @@ select:-webkit-autofill:focus {
   button.navbar-btn-open {
     display: none;
   }
-  
+
   /*----- Desktop Navigation -----*/
 
   .desktop-navbar {
     display: flex;
   }
-  
+
   /*----- Section: About -----*/
 
   .about-me-text {
@@ -792,17 +793,17 @@ select:-webkit-autofill:focus {
 
   .proj-1 {
     /*Background shorthand: [bg-image] [bg-position] / [bg-size] [bg-repeat] [bg-attachment] [bg-origin] [bg-clip] [bg-color]*/
-    background: url(./images/aStarPathfinder.png) center/cover no-repeat;
+    background: url(./images/aStarPathfinder.png) top/contain no-repeat;
   }
-  
+
   .proj-2 {
     /*Background shorthand: [bg-image] [bg-position] / [bg-size] [bg-repeat] [bg-attachment] [bg-origin] [bg-clip] [bg-color]*/
-    background: url(./images/reactLoginRegisterImage.png) center/cover no-repeat;
+    background: url(./images/movieCloud.png) top/contain no-repeat;
   }
-  
+
   .proj-3 {
     /*Background shorthand: [bg-image] [bg-position] / [bg-size] [bg-repeat] [bg-attachment] [bg-origin] [bg-clip] [bg-color]*/
-    background: url(./images/restaurantReviews.png) center/cover no-repeat;
+    background: url(./images/restaurantReviews.png) top/contain no-repeat;
   }
 
   /*----- Section: Contact -----*/
@@ -814,6 +815,10 @@ select:-webkit-autofill:focus {
 
 /* 1200px */
 @media (min-width: 75rem) {
+
+  .title {
+    font-size: 5rem;
+  }
 
   /*----- Section: About -----*/
 
