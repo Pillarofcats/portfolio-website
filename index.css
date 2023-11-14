@@ -101,7 +101,6 @@ html {
   /*Adjust href anchor scroll to top*/
   scroll-padding-top: 3rem;
   letter-spacing: 1px;
-  background-color: #252525;
 }
 
 a,
@@ -355,6 +354,7 @@ button.navbar-btn-open {
   background: url("./images/hello-bg.jpg") center/cover no-repeat;
   height: 70rem;
   gap: 3rem;
+  background-color: #252525;
 }
 
 .hello-container {
