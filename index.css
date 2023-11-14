@@ -101,6 +101,7 @@ html {
   /*Adjust href anchor scroll to top*/
   scroll-padding-top: 3rem;
   letter-spacing: 1px;
+  background-color: #252525;
 }
 
 a,
@@ -803,7 +804,7 @@ select:-webkit-autofill:focus {
 
   .proj-3 {
     /*Background shorthand: [bg-image] [bg-position] / [bg-size] [bg-repeat] [bg-attachment] [bg-origin] [bg-clip] [bg-color]*/
-    background: url(./images/restaurantReviews.png) top/contain no-repeat;
+    background: url(./images/tribuy.png) top/contain no-repeat;
   }
 
   /*----- Section: Contact -----*/
